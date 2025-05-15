@@ -6,13 +6,13 @@ The goal for me is not to create a fully fledged blog application it's mainly fo
 
 ## Features
 
-1. Post Creation: Users should be able to create new posts.
+1. **Post Creation:** Users should be able to create new posts.
 
-2. Post Viewing: The home page should allow the user to view all their posts.
+2. **Post Viewing:** The home page should allow the user to view all their posts.
 
-3. Post Update/Delete: Users should be edit and delete posts as needed.
+3. **Post Update/Delete:** Users should be able to edit and delete posts as needed.
 
-3. Styling: The application should be well-styled and responsive, ensuring a good user experience on both desktop and mobile devices.
+3. **Styling:** The application should be well-styled and responsive, ensuring a good user experience on both desktop and mobile devices.
 
 ## Tech Stack
 
@@ -20,3 +20,24 @@ The goal for me is not to create a fully fledged blog application it's mainly fo
 
 2. **EJS:** It uses EJS as templating engine to generate dynamic HTML based on the application's state.
 
+## Final Product
+
+### Home Page
+
+![alt text](image-1.png)
+
+### Creating a New Blog
+
+![alt text](image-2.png)
+
+### All Blogs
+
+![alt text](image-3.png)
+
+### Single Blog with Edit and Delete Button
+
+![alt text](image-4.png)
+
+### Editing A Blog
+
+![alt text](image-5.png)
