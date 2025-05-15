@@ -1,6 +1,8 @@
 # PostBlog
 
-A blog post app with post/update/delete functionalities. This app was made to know more about creating apps using ExpressJS and for templating using EmbeddedJS
+A blog post app with post/update/delete functionalities. This app was made to know more about creating apps using ExpressJS and for templating using EmbeddedJS.
+
+The goal for me is not to create a fully fledged blog application it's mainly for me to test out how i can implement post/update/delete functionalities. So any user can create blog and any one can edit anyone's blog since, for db i am only using .json as the db implemenation for this won't be much difficult, therefore to save time i am taking this approach.
 
 ## Features
 

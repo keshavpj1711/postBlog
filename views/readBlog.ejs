@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs") %>
+<div> 
+  <%# console.log("on /readBlog: ", blogData) %> 
+  <% for( let i = 0; i < blogData.length; i++ ) { %>
+    <div>
+      <div>
+        <%= blogData[i].title %> 
+      </div>
+      <div>
+        -By <%= blogData[i].author %> 
+      </div>
+      <div>
+        created at: <%= blogData[i].createdAt %> 
+      </div>
+      <br>
+    </div>
+  <% } %>
+</div>
+<%- include("partials/footer.ejs") %>
