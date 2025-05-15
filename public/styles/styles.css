@@ -1,0 +1,251 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0a4a6e;
+  color: #ffd8b1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid #ffd8b1;
+  border-radius: 5px;
+}
+
+/* Navigation */
+#nav-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  max-width: 1200px;
+  padding: 1rem;
+  background-color: #0a4a6e;
+  border: 2px solid #ffd8b1;
+  border-radius: 5px;
+}
+
+nav a {
+  color: #ffd8b1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+.welcome-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: #ffd8b1;
+}
+
+.welcome-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ffd8b1;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid #ffd8b1;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.create-btn {
+  background-color: #ffd8b1;
+  color: #0a4a6e;
+}
+
+.read-btn {
+  background-color: transparent;
+  color: #ffd8b1;
+}
+
+.create-btn:hover {
+  background-color: #ffc999;
+}
+
+.read-btn:hover {
+  background-color: rgba(255, 216, 177, 0.1);
+}
+
+/* Blog List */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.blog-card {
+  border: 1px solid #ffd8b1;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ffd8b1;
+}
+
+.blog-author, .blog-date {
+  font-size: 0.9rem;
+  color: #ffd8b1;
+  opacity: 0.8;
+}
+
+#blogLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Single Blog Page */
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.blog-container h4 {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.blog-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.blog-actions a, .blog-actions button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ffd8b1;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffd8b1;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.blog-actions a:hover, .blog-actions button:hover {
+  background-color: rgba(255, 216, 177, 0.1);
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: 1px solid #ffd8b1;
+  border-radius: 5px;
+  background-color: rgba(255, 216, 177, 0.1);
+  color: #ffd8b1;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: rgba(255, 216, 177, 0.6);
+}
+
+input[type="submit"] {
+  background-color: #ffd8b1;
+  color: #0a4a6e;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffc999;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

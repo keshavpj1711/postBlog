@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<div class="blog-container">
+  <h1><%= blogData.title %></h1>
+  <h3>-By {<%= blogData.author %>}</h3>
+  <h4><%= blogData.createdAt %></h4>
+
+  <p class="blog-content"><%= blogData.content %></p>
+
+  <div class="blog-actions">
+    <a href="/editBlog/<%= blogData.id %>">Edit Blog</a>
+    <form action="/deleteBlog/<%= blogData.id %>" method="POST" style="display:inline; margin: 0;">
+      <button type="submit">Delete Blog</button>
+    </form>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs") %>

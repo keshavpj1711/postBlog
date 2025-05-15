@@ -1,18 +1,18 @@
 <%- include("partials/header.ejs") %>
-<div> 
-  <%# console.log("on /readBlog: ", blogData) %> 
+<div class="blog-list">
   <% for( let i = 0; i < blogData.length; i++ ) { %>
-    <div>
-      <div>
-        <%= blogData[i].title %> 
-      </div>
-      <div>
-        -By <%= blogData[i].author %> 
-      </div>
-      <div>
-        created at: <%= blogData[i].createdAt %> 
-      </div>
-      <br>
+    <div class="blog-card">
+      <a href="/readBlog/<%= blogData[i].id %>" id="blogLink">
+        <div class="blog-title">
+          <%= blogData[i].title %>
+        </div>
+        <div class="blog-author">
+          -By <%= blogData[i].author %>
+        </div>
+        <div class="blog-date">
+          created at: <%= blogData[i].createdAt %>
+        </div>
+      </a>
     </div>
   <% } %>
 </div>
