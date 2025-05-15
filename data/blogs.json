@@ -4,6 +4,14 @@
     "title": "New UI",
     "content": "So this app was finally completed and the style.css file for this was written using perplexity as writing simple standard css can take a lot of time.",
     "author": "Nightfury1711",
-    "createdAt": "2025-05-15T18:15:48.655Z"
+    "createdAt": "2025-05-15T18:15:48.655Z",
+    "updatedAt": "2025-05-15T18:25:13.875Z"
+  },
+  {
+    "id": 4,
+    "title": "Create button to Navigation",
+    "content": "A user should always be able to add a blog even when s/he's reading others blog or when s/he is checking out the available blogs therefore a create button was added directly to the navigation bar for convenience.",
+    "author": "Nightfury1711",
+    "createdAt": "2025-05-15T18:24:33.894Z"
   }
 ]

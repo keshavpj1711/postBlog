@@ -4,7 +4,8 @@
 
 <form action="/updateBlog/<%= blogData.id %>" method="post">
   <input type="text" placeholder="Title" required name="title" value="<%= blogData.title %>">
-  <input type="text" placeholder="Content" required name="content" value="<%= blogData.content %>">
+  <!-- <input type="text" placeholder="Content" required name="content" value="<%= blogData.content %>"> -->
+  <textarea placeholder="Content" required="" name="content"><%= blogData.content %></textarea>
   <input type="text" placeholder="Author" required name="author" value="<%= blogData.author %>">
   <input type="submit" value="Update Blog">
 </form>
